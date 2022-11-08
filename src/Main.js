@@ -8,13 +8,13 @@ class Main extends React.Component {
       <>
         <main>
           <HornedBeast
-            title="Elk in Velvet Horns at Rocky Mountain National Park"
+            title="Elk in Velvet Horns"
             imageUrl ="./src/images/elk.jpg"
             description="Image of Elk in Velvet Horns at Rocky Mountain National Park"
           >
           </HornedBeast>
           <HornedBeast
-            title="American Bison at Yellowstone National Park"
+            title="American Bison"
             imageUrl="./src/bison.jpg"
             description="Image of American Bison at Yellowstone National Park"
           >
