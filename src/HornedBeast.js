@@ -20,17 +20,16 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <>
-        
-          <h2>{this.props.title}</h2>
-          {/* <p onClick={this.handleLikes}></p> */}
-          {/* <p>{this.state.likes} likes.</p> */}
-          <img 
-          src={this.props.imageUrl} 
-          alt={this.props.description} 
-          title={this.props.title} 
-          />
-          <p>{this.props.description}</p>
-        
+
+        <h2>{this.props.title}</h2>
+        {/* <p onClick={this.handleLikes}></p> */}
+        {/* <p>{this.state.likes} likes.</p> */}
+        <img
+          src={this.props.imageUrl}
+          alt={this.props.description}
+          title={this.props.title}
+        />
+        <p>{this.props.description}</p>
       </>
     );
   }
