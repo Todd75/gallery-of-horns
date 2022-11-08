@@ -29,14 +29,15 @@ import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
+//import data from './data.json';
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+        <Header></Header>
+        <Main></Main>
+        <Footer></Footer>
       </>
     )
   }
