@@ -8,15 +8,15 @@ class Main extends React.Component {
       <>
         <main>
           <HornedBeast
-            title=""
-            imageUrl=""
-            description=""
+            title="Elk in Velvet Horns at Rocky Mountain National Park"
+            imageUrl ="./src/images/elk.jpg"
+            description="Image of Elk in Velvet Horns at Rocky Mountain National Park"
           >
           </HornedBeast>
           <HornedBeast
-            title=""
-            imageUrl=""
-            description=""
+            title="American Bison at Yellowstone National Park"
+            imageUrl="./src/bison.jpg"
+            description="Image of American Bison at Yellowstone National Park"
           >
           </HornedBeast>
         </main>
