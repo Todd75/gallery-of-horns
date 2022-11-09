@@ -31,24 +31,31 @@ class HornedBeast extends React.Component {
         <Card>
           <Card.Body>
             <Card.Header as="h2"
-
-
+              id={this.props._id}
+              keyword={this.props.keyword}
             >
               {this.props.title}
             </Card.Header>
-            <img
-
-              src={this.props.imageUrl}
-              alt={this.props.description}
-              title={this.props.title}
-              onClick={this.handleLikes}
-            />
-            <p>{this.props.description}</p>
-
+            <div className='imgCardText'>
+              <img
+                className='animalMainImg'
+                src={this.props.imageUrl}
+                alt={this.props.description}
+                title={this.props.title}
+                onClick={this.handleClicks}
+              />
+              <Card.Text>
+                {this.props.description}
+              </Card.Text>
+            </div>
+            <div className='likesDiv'>
+              <Button className='likesBtn' onClick={(this.handleLikes)} variant='success'>Likes</Button>
+              
+            </div>
           </Card.Body>
         </Card>
       </>
-    );
+    )
   }
 }
 export default HornedBeast;
