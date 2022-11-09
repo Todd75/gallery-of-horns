@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstap/Card';
-import './HornedBeast.css';
+import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class HornedBeast extends React.Component {
             <div className='imgCardText'>
               <img
                 className='animalMainImg'
-                src={this.props.imageUrl}
+                src={this.props.image_url}
                 alt={this.props.description}
                 title={this.props.title}
                 onClick={this.handleClicks}
@@ -49,8 +49,8 @@ class HornedBeast extends React.Component {
               </Card.Text>
             </div>
             <div className='likesDiv'>
-              <Button className='likesBtn' onClick={(this.handleLikes)} variant='success'>Likes</Button>
-              
+              <Button className='likesBtn' onClick={(this.handleLikes)} variant='success'>LIKE</Button>
+              <Card.Text id='likeCount'>{this.state.like}</Card.Text>
             </div>
           </Card.Body>
         </Card>
