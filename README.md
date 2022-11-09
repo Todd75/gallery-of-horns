@@ -89,9 +89,39 @@ Finish Time: 2:50
 
 Actual time needed to complete: 5 minutes
 
-Number and Name of Feature: 
+Number and Name of Feature: Display Images
 
-Estimate of time needed to complete:
+Estimate of time needed to complete: 2 hours
+
+Start Time:
+
+Finish Time:
+
+Actual time needed to complete:
+
+Number and Name of Feature: Allow Users to Vote
+
+Estimate of time needed to complete: 1 hours
+
+Start Time:
+
+Finish Time:
+
+Actual time needed to complete:
+
+Number and Name of Feature: Bootstrap
+
+Estimate of time needed to complete: 1 hours
+
+Start Time:
+
+Finish Time:
+
+Actual time needed to complete:
+
+Number and Name of Feature:
+
+Estimate of time needed to complete: 
 
 Start Time:
 

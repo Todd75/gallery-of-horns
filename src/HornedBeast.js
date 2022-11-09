@@ -30,17 +30,21 @@ class HornedBeast extends React.Component {
       <>
         <Card>
           <Card.Body>
-            <Card.Header as="h2">
-              <h2>{this.props.title}</h2>
-              {<p onClick={this.handleLikes}></p>}
-              {<p>{this.state.likes} likes.</p>}
-              <img
-                src={this.props.imageUrl}
-                alt={this.props.description}
-                title={this.props.title}
-              />
-              <p>{this.props.description}</p>
+            <Card.Header as="h2"
+
+
+            >
+              {this.props.title}
             </Card.Header>
+            <img
+
+              src={this.props.imageUrl}
+              alt={this.props.description}
+              title={this.props.title}
+              onClick={this.handleLikes}
+            />
+            <p>{this.props.description}</p>
+
           </Card.Body>
         </Card>
       </>
