@@ -10,7 +10,11 @@ class SelectedBeast extends React.Component {
                     <Modal.Title>{this.props.selectedBeast.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="modalbody">
-                    
+                    <img id="modaling"
+                        src={this.props.selectedBeast.image_url}
+                        alt={this.props.description}
+                    />
+                    <p>{this.props.selectedBeast.description}</p>
 
                 </Modal.Body>
                 <Modal.Footer>
@@ -21,4 +25,4 @@ class SelectedBeast extends React.Component {
     }
 }
 
-export default SelectedBeast
+export default SelectedBeast;

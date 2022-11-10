@@ -6,6 +6,7 @@ import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
 import data from './data.json';
+import SelectedBeast from './SelectedBeast.js';
 
 
 class App extends React.Component {
@@ -27,6 +28,7 @@ class App extends React.Component {
   handleOpenModal = (beast) => {
     this.setState({
       showModal: true,
+      selectedBeast: beast
     });
   };
 
@@ -49,7 +51,7 @@ class App extends React.Component {
           />
         <Footer />
       </>
-    )
+    );
   }
 }
 
