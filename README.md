@@ -93,29 +93,29 @@ Number and Name of Feature: Display Images
 
 Estimate of time needed to complete: 2 hours
 
-Start Time:
+Start Time:8:00
 
-Finish Time:
+Finish Time:11:00
 
-Actual time needed to complete:
+Actual time needed to complete:3 hours
 
 Number and Name of Feature: Allow Users to Vote
 
 Estimate of time needed to complete: 1 hours
 
-Start Time:
+Start Time:3:30
 
-Finish Time:
+Finish Time:5:00
 
-Actual time needed to complete:
+Actual time needed to complete:1.5 hours
 
 Number and Name of Feature: Bootstrap
 
 Estimate of time needed to complete: 1 hours
 
-Start Time:
+Start Time:8:30
 
-Finish Time:
+Finish Time:9:00
 
 Actual time needed to complete: About 30 minutes with some reading
 
@@ -125,9 +125,9 @@ Estimate of time needed to complete: 3 hours
 
 Start Time: 4:30
 
-Finish Time:
+Finish Time:7:00
 
-Actual time needed to complete:
+Actual time needed to complete:2.5 hours
 
 Number and name of feature: ________________________________
 
