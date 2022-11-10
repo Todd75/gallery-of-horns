@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import './App.css';
+import './SelectedBeasts.css';
 
 class SelectedBeast extends React.Component {
     render() {
@@ -18,7 +20,7 @@ class SelectedBeast extends React.Component {
 
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={this.props.handleCloseModal}>Done</Button>
+                    <Button variant="primary" onClick={this.props.handleCloseModal}>Finished</Button>
                 </Modal.Footer>
             </Modal>
         )
