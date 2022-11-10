@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './HornedBeast.css';
 import './App.css';
 
 class HornedBeast extends React.Component {
@@ -50,7 +51,7 @@ class HornedBeast extends React.Component {
             </div>
             <div className='likesDiv'>
               <Button className='likesBtn' onClick={(this.handleLikes)} variant='success'>LIKE</Button>
-              <Card.Text id='likeCount'>{this.state.like}</Card.Text>
+              <Card.Text id='likeCount'> 💓 {this.state.likes}</Card.Text>
             </div>
           </Card.Body>
         </Card>

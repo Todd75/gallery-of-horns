@@ -7,6 +7,7 @@ class Main extends React.Component {
   render() {
     return (
       <>
+      <main className='bacon'>
         {
           data.map((beast) => (
 
@@ -20,7 +21,7 @@ class Main extends React.Component {
             />
           ))
         }
-
+      </main>
       </>
     )
   }

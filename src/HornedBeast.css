@@ -1,0 +1,18 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    display: inline-block;
+    border: 1px solid #dadada;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 450px;
+    background-color: beige;
+}
+.animalMainImg {
+    height: 200px;
+    width: 250px;
+} 
