@@ -1,45 +1,57 @@
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 
 import React from 'react'
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
-//import data from './data.json';
+import data from './data.json';
+import SelectedBeast from './SelectedBeast.js';
+
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      beasts: data,
+      showModal: false,
+      selectedBeast: null
+    };
+  }
+
+  handleCloseModal = () => {
+    this.setState({
+      showModal: false,
+    });
+  };
+
+  handleOpenModal = (beast) => {
+    this.setState({
+      showModal: true,
+      selectedBeast: beast
+    });
+  };
+
+
   render() {
     return (
       <>
+      {
+        this.state.selectedBeast &&
+        <SelectedBeast
+        showModal={this.state.showModal}
+        handleCloseModal={this.handleCloseModal}
+        selectedBeast={this.state.selectedBeast}
+        />
+      }
         <Header></Header>
-        <Main></Main>
-        <Footer></Footer>
+        <Main
+          beasts={this.state.beasts}
+          handleOpenModal={this.handleOpenModal}
+          />
+        <Footer />
       </>
-    )
+    );
   }
 }
 

@@ -1,27 +1,29 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
-import data from './data.json';
+import './Main.css';
 
 class Main extends React.Component {
 
   render() {
     return (
       <>
-      <main className='bacon'>
+      <div className='mainBeast'>
         {
-          data.map((beast) => (
+          this.props.beasts.map((beasts, idx) => (
 
             <HornedBeast
-              _id={beast._id}
-              title={beast.title}
-              image_url={beast.image_url}
-              horns={beast.horns}
-              keyword={beast.keyword}
-              description={beast.description}
+              handleOpenModal={() => this.props.handleOpenModal(beasts)}
+              _id={beasts._id}
+              title={beasts.title}
+              image_url={beasts.image_url}
+              horns={beasts.horns}
+              keyword={beasts.keyword}
+              description={beasts.description}
+              key={idx}
             />
           ))
         }
-      </main>
+      </div>
       </>
     )
   }

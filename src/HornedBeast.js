@@ -27,6 +27,7 @@ class HornedBeast extends React.Component {
   }
 
   render() {
+
     return (
       <>
         <Card>
@@ -42,8 +43,8 @@ class HornedBeast extends React.Component {
                 className='animalMainImg'
                 src={this.props.image_url}
                 alt={this.props.description}
-                title={this.props.title}
-                onClick={this.handleClicks}
+            
+                onClick={this.handleOpenModal}
               />
               <Card.Text>
                 {this.props.description}
