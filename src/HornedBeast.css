@@ -8,14 +8,18 @@
 .card {
     display: inline-block;
     border: 1px solid #dadada;
-    box-shadow: 4px 4px 8px 0 rgba(219, 90, 186, 1);;
+    box-shadow: 4px 4px 8px 0 rgba(219, 90, 186, 1);
     width: 300px;
     height: 450px;
     background-color: rgba(215, 166, 179, 1) ;
     margin: 1rem;
+    font-weight: 470;
 }
 
 .animalMainImg {
     height: 200px;
     width: 250px;
+}
+.card-header {
+   color:rgb(133, 67, 169);
 }

@@ -5,9 +5,10 @@
 }
 
 #Select {
-  color: rgb(103, 9, 226);
+  color: rgb(133, 67, 169);
   min-width: 190px;
   max-width: 300px;
+  font-weight: 500;
 }
 
 #labelForm {
