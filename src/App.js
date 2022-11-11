@@ -17,6 +17,34 @@ class App extends React.Component {
     };
   }
 
+  handleFilter = (event) => {
+    event.preventDefault();
+    console.log(event.target.value);
+     let horns = event.target.value;
+     if (horns === '1') {
+     let newData =  data.filter(beast => beast.horns === 1)
+    //  console.log(newData);
+     this.setState({beasts: newData});
+     } else if(horns === '2') {
+     let newData = data.filter(beast => beast.horns === 2) 
+     this.setState({beasts: newData });
+     } else if(horns === '3') {
+     let newData = data.filter(beast => beast.horns === 3) 
+     this.setState({beasts: newData});
+     } else if(horns === "100") {
+     let newData = data.filter(beast => beast.horns === 100)
+     this.setState({beasts: newData});
+     } else {
+      this.setState({beasts: data});
+     }
+    // let updates = this.props.data.filter(beast => {
+    //   return beast.horns === this.state.requestedHorns;
+    // })
+    // this.setState({
+    //   newData: updates
+    // });
+  }
+
   handleCloseModal = () => {
     this.setState({
       showModal: false,
@@ -45,6 +73,7 @@ class App extends React.Component {
         }
         <Header></Header>
         <Main
+          filter = {this.handleFilter}
           beasts={this.state.beasts}
           handleOpenModal={this.handleOpenModal}
         />

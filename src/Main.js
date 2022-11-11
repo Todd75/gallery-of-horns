@@ -6,33 +6,33 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      requestedHorns: 0,
-      newData: this.props.beasts,
-    }
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     requestedHorns: 0,
+  //     newData: this.props.beasts,
+  //   }
+  // }
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    let updates = this.props.data.filter(beast => {
-      return beast.horns === this.state.requestedHorns;
-    })
-    this.setState({
-      newData: updates
-    });
-  }
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   let updates = this.props.data.filter(beast => {
+  //     return beast.horns === this.state.requestedHorns;
+  //   })
+  //   this.setState({
+  //     newData: updates
+  //   });
+  // }
 
-  handleChanges = (event) => {
-    event.preventDefault();
-    this.setState({
-      requestedHorns: parseInt(event.target.value),
-    })
-  }
+  // handleChanges = (event) => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     requestedHorns: parseInt(event.target.value),
+  //   })
+  // }
   render() {
 
-    let beastArray = this.state.newData.map(beasts => {
+    let beastArray = this.props.beasts.map(beasts => {
       return <HornedBeast
         handleOpenModal={() => this.props.handleOpenModal(beasts)}
         _id={beasts._id}
@@ -47,26 +47,30 @@ class Main extends React.Component {
 
     let numberHornsArray = [];
 
-    let hornsOptions = this.props.data.map(value => {
-      if (!numberHornsArray.includes(value.horns)) {
-        numberHornsArray.push(value.horns);
-        return <option key={value.horns}>{value.horns}</option>;
-      }
-    });
+    // let hornsOptions = this.props.data.filter(value => {
+    //   if (!numberHornsArray.includes(value.horns)) {
+    //     numberHornsArray.push(value.horns);
+    //     return <option key={value.horns}>{value.horns}</option>;
+    //   }
+    // });
 
     return (
       <>
         <main>
-          <Form id="form" onSubmit={this.handleSubmit}>
+          <Form id="form">
             <fieldset>
               <Form.Group className="beastHorn">
                 <Form.Label htmlFor="Select">Search By How Many Horns</Form.Label>
-                <Form.Select id="Select" onChange={this.handleChanges}>
+                <Form.Select id="Select" onChange={this.props.filter}>
                   <option>Number of Horns</option>
-                  {hornsOptions}
+                  <option value={1}>1 Horn</option>
+                  <option value={2}>2 Horns</option>
+                  <option value={3}>3 Horns</option>
+                  <option value={100}>100 Horns</option>
+                
                 </Form.Select>
               </Form.Group>
-              <Button type="submit">Submit</Button>
+              
             </fieldset>
           </Form>
           <article>
