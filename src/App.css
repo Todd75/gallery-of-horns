@@ -55,13 +55,13 @@ footer {
 }
 
 .modal {
-  /* background-color: antiquewhite; */
+  background-color: antiquewhite;
   width: auto;
   height: 45%;
   font-style: italic;
   color: rgb(0, 0, 201);
   font-weight: 450;
-
+  /* animation: fade-in 3.5s; */
 
 }
 
