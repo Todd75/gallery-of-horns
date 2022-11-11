@@ -1,6 +1,16 @@
-.bacon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.beastHorn {
+  width: 25%;
+  margin-left: 1rem;
+  color: rgb(244, 249, 250);
+}
+
+#Select {
+  color: rgb(103, 9, 226);
+  min-width: 190px;
+  max-width: 300px;
+}
+
+#labelForm {
+  font-family: fantasy;
+  font-size: 1.5rem;
 }

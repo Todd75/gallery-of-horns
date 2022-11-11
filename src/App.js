@@ -23,7 +23,6 @@ class App extends React.Component {
      let horns = event.target.value;
      if (horns === '1') {
      let newData =  data.filter(beast => beast.horns === 1)
-    //  console.log(newData);
      this.setState({beasts: newData});
      } else if(horns === '2') {
      let newData = data.filter(beast => beast.horns === 2) 
@@ -37,12 +36,6 @@ class App extends React.Component {
      } else {
       this.setState({beasts: data});
      }
-    // let updates = this.props.data.filter(beast => {
-    //   return beast.horns === this.state.requestedHorns;
-    // })
-    // this.setState({
-    //   newData: updates
-    // });
   }
 
   handleCloseModal = () => {
