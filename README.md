@@ -123,18 +123,8 @@ Number and Name of Feature: Modal
 
 Estimate of time needed to complete: 3 hours
 
-Start Time: 4:30
+Start Time: 7:30
 
-Finish Time:7:00
+Finish Time: 11:30 plus an hour in the morning
 
-Actual time needed to complete:2.5 hours
-
-Number and name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete:
+Actual time needed to complete: 5 hours because I forgot 1 props tag on an event
