@@ -57,6 +57,7 @@ footer {
 .modal {
   background-color: antiquewhite;
   width: auto;
+  max-width: vw;
   height: 45%;
   font-style: italic;
   color: rgb(0, 0, 201);
