@@ -48,7 +48,7 @@ footer {
 #modaling {
   width: 100%;
   height: auto;
-  animation: fade-in 3s;
+  animation: fade-in 3.5s;
   border-radius: 2em;
   border-style: outset;
 
@@ -61,17 +61,20 @@ footer {
   font-style: italic;
   color: rgb(0, 0, 201);
   font-weight: 450;
-  
-  
+
+
 }
+
 Main {
   background-color: rgba(158, 143, 178, 1);
   min-height: 100vh;
 }
+
 header {
   background-color: rgba(158, 143, 178, 1);
   font-size: 3rem;
 }
+
 header h1 {
   text-align: center;
   font-family: cursive;
@@ -80,10 +83,11 @@ header h1 {
   font-size: 5rem;
   min-height: 7rem;
 }
+
 @keyframes fade-in {
   0% {
-      opacity: 0%;
-  /* }
+    opacity: 0%;
+    /* }
   25% {
       opacity: 25%
   }
@@ -93,7 +97,8 @@ header h1 {
   75% {
       opacity: 75% */
   }
+
   100% {
-      opacity: 100%
+    opacity: 100%
   }
 }
