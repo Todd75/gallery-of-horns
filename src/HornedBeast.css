@@ -25,4 +25,9 @@
 }
 #likeButton {
     background-color: rgba(219, 90, 186, 1);
+    border: 2px transparent;
+}
+#likeButton:hover {
+    color:blue;
+    
 }
