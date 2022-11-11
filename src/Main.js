@@ -10,12 +10,12 @@ class Main extends React.Component {
     super(props);
     this.state = {
       requestedHorns: 0,
-      newData: this.props.data,
+      newData: this.props.beasts,
     }
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
+  handleSubmit = (event) => {
+    event.preventDefault();
     let updates = this.props.data.filter(beast => {
       return beast.horns === this.state.requestedHorns;
     })
@@ -24,10 +24,10 @@ class Main extends React.Component {
     });
   }
 
-  handleChanges = (e) => {
-    e.preventDefault();
+  handleChanges = (event) => {
+    event.preventDefault();
     this.setState({
-      requestedHorns: parseInt(e.target.value),
+      requestedHorns: parseInt(event.target.value),
     })
   }
   render() {
@@ -59,14 +59,14 @@ class Main extends React.Component {
         <main>
           <Form id="form" onSubmit={this.handleSubmit}>
             <fieldset>
-              <Form.Group className="mb-3">
+              <Form.Group className="beastHorn">
                 <Form.Label htmlFor="Select">Search By How Many Horns</Form.Label>
                 <Form.Select id="Select" onChange={this.handleChanges}>
                   <option>Number of Horns</option>
                   {hornsOptions}
                 </Form.Select>
               </Form.Group>
-              <Button type="Submit">Submit</Button>
+              <Button type="submit">Submit</Button>
             </fieldset>
           </Form>
           <article>

@@ -34,7 +34,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header></Header>
+        
         {
           this.state.selectedBeast &&
           <SelectedBeast
@@ -43,7 +43,7 @@ class App extends React.Component {
             selectedBeast={this.state.selectedBeast}
           />
         }
-        
+        <Header></Header>
         <Main
           beasts={this.state.beasts}
           handleOpenModal={this.handleOpenModal}
