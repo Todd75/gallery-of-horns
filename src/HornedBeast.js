@@ -50,7 +50,7 @@ class HornedBeast extends React.Component {
               </Card.Text>
             </div>
             <div className='likesDiv'>
-              <Button className='likesBtn' onClick={(this.handleLikes)} variant='success'>LIKE</Button>
+              <Button className='likesBtn' id='likeButton' onClick={(this.handleLikes)} variant='success'>Like</Button>
               <Card.Text id='likeCount'> 💜 {this.state.likes}</Card.Text>
             </div>
           </Card.Body>
