@@ -128,3 +128,14 @@ Start Time: 7:30
 Finish Time: 11:30 plus an hour in the morning
 
 Actual time needed to complete: 5 hours because I forgot 1 props tag on an event
+
+## Special Thanks To
+
+All of which helped me in way or another get ideas of where to code when I was lost in the code.
+
+- Jason
+- Harper
+- Aubrey
+- Angelos
+- Justin(TA)
+- Brandon(TA)
