@@ -48,6 +48,10 @@ footer {
 #modaling {
   width: 100%;
   height: auto;
+  animation: fade-in 3s;
+  border-radius: 2em;
+  border-style: outset;
+
 }
 
 .modal {
@@ -57,6 +61,8 @@ footer {
   font-style: italic;
   color: rgb(0, 0, 201);
   font-weight: 450;
+  
+  
 }
 Main {
   background-color: rgba(158, 143, 178, 1);
@@ -73,4 +79,21 @@ header h1 {
   color: rgb(255, 255, 255);
   font-size: 5rem;
   min-height: 7rem;
+}
+@keyframes fade-in {
+  0% {
+      opacity: 0%;
+  /* }
+  25% {
+      opacity: 25%
+  }
+  50% {
+      opacity: 50%
+  }
+  75% {
+      opacity: 75% */
+  }
+  100% {
+      opacity: 100%
+  }
 }

@@ -23,6 +23,7 @@
 }
 .card-header {
    color:rgb(133, 67, 169);
+   
 }
 #likeButton {
     background-color: rgba(219, 90, 186, 1);
@@ -53,4 +54,15 @@
     opacity: 1;
     fill:rgb(133, 67, 169);
     animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat2 {
+    0% {
+        transform:scale(.95);
+    }
+    50% {
+        transform:scale(1.00);
+    }
+    100% {
+        transform:scale(.95)
+    }
 }
