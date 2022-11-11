@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HornedBeast.css';
 import './App.css';
+import { FiHeart } from "react-icons/fi";
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -51,7 +52,7 @@ class HornedBeast extends React.Component {
             </div>
             <div className='likesDiv'>
               <Button className='likesBtn' id='likeButton' onClick={(this.handleLikes)} variant='success'>Like</Button>
-              <Card.Text id='likeCount'> 💜 {this.state.likes}</Card.Text>
+              <Card.Text id='likeCount'> <FiHeart className="heart" /> {this.state.likes}</Card.Text>
             </div>
           </Card.Body>
         </Card>

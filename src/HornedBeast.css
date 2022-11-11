@@ -35,5 +35,29 @@
 .animalMainImg:hover {
     cursor: grabbing;
     border: 3px solid red;
+}
+@keyframes heartbeat {
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.35);
+    }
+    100% {
+        transform:scale(1)
+    }
+}
 
+.heart {
+    color:rgb(133, 67, 169);
+    opacity: .85;
+    cursor: pointer;
+    fill:rgb(133, 67, 169);
+}
+.heart:hover {
+    animation: heartbeat 1s infinite;
+    fill:rgb(133, 67, 169);
+    color:rgb(133, 67, 169);
+    opacity: 1;
+    transition: opacity 500ms;
 }
